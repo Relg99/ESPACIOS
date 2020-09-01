@@ -9,6 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MenuStoreActivity"></activity>
+        <activity android:name=".StoreInfoActivity" />
+        <activity android:name=".ScheduleActivity" />
+        <activity android:name=".OptimizationActivity" />
+        <activity android:name=".RegisterAccountActivity" />
+        <activity android:name=".EmailCodeActivity" />
+        <activity android:name=".RegisterStoreActivity" />
+        <activity android:name=".AccountOptionsActivity" />
+        <activity android:name=".CounterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ClientActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
