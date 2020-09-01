@@ -3,4 +3,6 @@
     <string name="title">E S P A C I O S</string>
     <string name="client_btn">CLIENTE</string>
     <string name="store_btn">TIENDA</string>
+    <string name="login_btn">ENTRAR</string>
+    <string name="register_btn">REGISTRO</string>
 </resources>

@@ -19,4 +19,10 @@ public class MenuStoreActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+    public void openRegisterAccountActivity(View view) {
+        Intent intent = new Intent(this, RegisterAccountActivity.class);
+
+        startActivity(intent);
+    }
 }
