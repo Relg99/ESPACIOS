@@ -3,8 +3,10 @@ package com.example.espacios;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,17 +21,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
+    public void openClientActivity(View view) {
+        Intent intent = new Intent(this, ClientActivity.class);
 
-        Button mybutton = (Button) findViewById(R.id.mybutton);
-        final TextView mytext = (TextView) findViewById(R.id.mytext);
-        final ConstraintLayout mylayout = (ConstraintLayout) findViewById(R.id.mylayout);
+        startActivity(intent);
+    }
 
-        mybutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+    public void openMenuStoreActivity(View view) {
+        Intent intent = new Intent(this, MenuStoreActivity.class);
 
-            }
-        });
+        startActivity(intent);
     }
 }

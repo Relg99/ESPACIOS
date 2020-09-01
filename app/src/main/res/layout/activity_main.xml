@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/mytext"
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="E S P A C I O S"
@@ -19,20 +19,21 @@
         app:layout_constraintVertical_bias="0.07" />
 
     <Button
-        android:id="@+id/mybutton"
+        android:id="@+id/clientButton"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="120dp"
         android:text="CLIENTE"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:onClick="openClientActivity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/storeButton"
         app:layout_constraintVertical_bias="0.948" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/storeButton"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:text="ESTABLECIMIENTO"
@@ -41,6 +42,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:onClick="openMenuStoreActivity"
         app:layout_constraintVertical_bias="0.732" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
